@@ -1,0 +1,20 @@
+@import './base.scss';
+
+.layout {
+  display: grid;
+  grid-template-columns:
+    [full-page-start] minmax(6rem, 10rem) [main-start] repeat(4, 1fr) [main-end] minmax(
+      6rem,
+      10rem
+    )
+    [full-page-end];
+}
+
+.nav-grid {
+  grid-column: full-page-start / full-page-end;
+  background-color: var(--secondary-color);
+}
+
+.main-grid {
+  grid-column: main-start / main-end;
+}
