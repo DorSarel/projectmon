@@ -3,9 +3,9 @@
 .layout {
   display: grid;
   grid-template-columns:
-    [full-page-start] minmax(6rem, 10rem) [main-start] repeat(4, 1fr) [main-end] minmax(
-      6rem,
-      10rem
+    [full-page-start] minmax(2rem, 0.5fr) [main-start] repeat(4, 1fr) [main-end] minmax(
+      2rem,
+      0.5fr
     )
     [full-page-end];
 }
@@ -13,8 +13,10 @@
 .nav-grid {
   grid-column: full-page-start / full-page-end;
   background-color: var(--secondary-color);
+  margin-bottom: 5rem;
 }
 
 .main-grid {
   grid-column: main-start / main-end;
+  background-color: var(--secondary-color);
 }
