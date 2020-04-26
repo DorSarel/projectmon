@@ -1,12 +1,26 @@
+@import '../../media-queries.scss';
+
 /* DASHBOARD LAYOUT */
 //=====================
 .dashboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
+  @media only screen and (min-width: $bp-small) {
+    grid-column-gap: 2rem;
+  }
+
   &__grid-item {
     grid-column: 1 / -1;
     color: var(--secondary-color);
+
+    @media only screen and (min-width: $bp-small) {
+      grid-column: span 2;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+      grid-column: span 1;
+    }
   }
 }
 
@@ -50,6 +64,3 @@
     font-weight: 700;
   }
 }
-
-/* Recent Projects */
-//=====================
