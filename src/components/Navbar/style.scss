@@ -1,6 +1,17 @@
+@import '../../media-queries.scss';
+
 .nav {
   display: flex;
   flex-direction: column;
+  font-size: 1.25rem;
+
+  @media only screen and (min-width: $bp-xtrasmall) {
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: $bp-small) {
+    font-size: 1.5rem;
+  }
 
   &__brand {
     display: inline-block;
@@ -8,26 +19,35 @@
     text-decoration: none;
     color: currentColor;
     margin-right: auto;
-    font-size: 1.75rem;
+    font-size: 1.5em;
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    display: flex;
+
+    @media only screen and (min-width: $bp-small) {
+      margin-right: 1rem;
+    }
   }
 
   &__item {
-    font-size: 1.25rem;
+    display: flex;
+    font-size: 1em;
   }
 
   &__link:link,
   &__link:visited {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 0.5rem 1.5rem;
     text-decoration: none;
     color: currentColor;
     position: relative;
+    width: 100%;
   }
 
   &__link::before {

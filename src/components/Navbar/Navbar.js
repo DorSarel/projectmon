@@ -11,18 +11,26 @@ const Navbar = () => {
       </Link>
       <ul className='nav__list'>
         <li className='nav__item'>
-          {/* <Link to='/' className='nav__link'>
+          <Link to='/' className='nav__link'>
             Sign in
           </Link>
+        </li>
+        <li className='nav__item'>
           <Link to='/' className='nav__link'>
             Sign up
-          </Link> */}
+          </Link>
+        </li>
+        <li className='nav__item'>
           <Link to='/' className='nav__link'>
             Projects
           </Link>
+        </li>
+        <li className='nav__item'>
           <Link to='/' className='nav__link'>
             New Project
           </Link>
+        </li>
+        <li className='nav__item'>
           <Link to='/' className='nav__link'>
             Log out
           </Link>
