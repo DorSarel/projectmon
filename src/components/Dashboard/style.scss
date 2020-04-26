@@ -1,0 +1,36 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.recent-title {
+  grid-column: 1 / -1;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.new-project {
+  grid-column: 1 / -1;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &__icon {
+    margin-bottom: 1rem;
+    border: 1px dashed var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}
