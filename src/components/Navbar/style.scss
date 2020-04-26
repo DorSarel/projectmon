@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+
+  &__brand {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: currentColor;
+    margin-right: auto;
+    font-size: 1.75rem;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.25rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: currentColor;
+    position: relative;
+  }
+
+  &__link::before {
+    content: '';
+    background-color: currentColor;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: translateY(8px);
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  &__link:hover::before,
+  &__link:active::before {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
