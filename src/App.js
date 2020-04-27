@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import './common.scss';
 import './App.scss';
@@ -13,7 +13,8 @@ function App() {
       <Navbar />
       <main className='main-grid'>
         <Switch>
-          <Route exact path='/' component={Dashboard} />
+          <Route exact path='/dashboard' component={Dashboard} />
+          <Redirect to='/dashboard' />
         </Switch>
       </main>
     </div>
