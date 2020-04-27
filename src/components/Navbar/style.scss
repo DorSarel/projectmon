@@ -13,6 +13,10 @@
     font-size: 1.5rem;
   }
 
+  @media only screen and (min-width: $bp-large) {
+    font-size: 1.85rem;
+  }
+
   &__brand {
     display: inline-block;
     padding: 0.5rem 1.5rem;

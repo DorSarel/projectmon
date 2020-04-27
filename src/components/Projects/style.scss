@@ -1,3 +1,5 @@
+@import '../../media-queries.scss';
+
 .project {
   &__title {
     font-size: 2rem;
@@ -5,6 +7,10 @@
     letter-spacing: 1px;
     margin-bottom: -5px;
     font-weight: 400;
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 2.25rem;
+    }
   }
 
   &__date {
@@ -12,10 +18,18 @@
     font-size: 1.125rem;
     margin-bottom: 2rem;
     display: inline-block;
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 1.35rem;
+    }
   }
 
   &__text {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 1.75rem;
+    }
   }
 }

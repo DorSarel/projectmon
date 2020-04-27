@@ -1,3 +1,5 @@
+@import './media-queries.scss';
+
 .btn {
   border: 0;
   border-radius: 5px;
@@ -10,6 +12,11 @@
   cursor: pointer;
   transform: translateY(0) scale(1);
   transition: all 0.2s;
+
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 1.75rem;
+    padding: 1rem 3rem;
+  }
 
   &:hover {
     transform: translateY(-3px) scale(1.05);
@@ -35,4 +42,8 @@
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 2.25rem;
+  }
 }
