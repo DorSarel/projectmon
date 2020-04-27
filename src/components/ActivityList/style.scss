@@ -1,0 +1,40 @@
+@import '../../media-queries.scss';
+
+.activity-list {
+  color: var(--secondary-color);
+  margin: 0;
+  list-style: none;
+  grid-column: 1 / -1;
+  font-size: 1.5rem;
+
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 1.75rem;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--primary-color);
+  }
+
+  &__name {
+    grid-column: 1 / -1;
+    font-size: 1.25em;
+    margin-bottom: 0.5rem;
+  }
+
+  &__action,
+  &__date {
+    font-weight: 300;
+  }
+
+  &__action {
+    grid-column: col-start 1 / col-end 6;
+  }
+
+  &__date {
+    grid-column: col-start 7 / -1;
+  }
+}

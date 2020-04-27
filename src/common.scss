@@ -16,3 +16,11 @@
   padding: 2rem;
   margin-bottom: 2rem;
 }
+
+.recent-title {
+  grid-column: 1 / -1;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
