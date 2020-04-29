@@ -1,0 +1,56 @@
+@import '../../media-queries.scss';
+
+/* DASHBOARD LAYOUT */
+//=====================
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  @media only screen and (min-width: $bp-small) {
+    grid-column-gap: 2rem;
+  }
+
+  &__grid-item {
+    grid-column: 1 / -1;
+    color: var(--secondary-color);
+
+    @media only screen and (min-width: $bp-small) {
+      grid-column: span 3;
+    }
+
+    @media only screen and (min-width: $bp-medium) {
+      grid-column: span 2;
+    }
+  }
+}
+
+/* new-project */
+//=====================
+.new-project {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &__icon {
+    margin-bottom: 1rem;
+    border: 1px dashed var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover &__icon {
+    padding: 2.75rem;
+    transform: scale(1.25);
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}
