@@ -6,8 +6,8 @@ import TextInput from '../Common/TextInput';
 const NewProject = () => {
   return (
     <div className='add-project'>
-      <h2 className='recent-title'>add new project</h2>
       <Form>
+        <h2 className='recent-title'>add new project</h2>
         <TextInput
           name='project_name'
           label='project name'
