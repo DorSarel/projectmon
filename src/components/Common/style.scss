@@ -1,0 +1,33 @@
+@import '../../media-queries.scss';
+
+.form {
+  max-width: 80rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__control {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+  }
+
+  &__label {
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 0.75rem 2.5rem;
+  }
+
+  &__error {
+    color: red;
+    font-size: 0.85em;
+  }
+}

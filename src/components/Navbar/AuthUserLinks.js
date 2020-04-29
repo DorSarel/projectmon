@@ -9,7 +9,7 @@ const AuthUserLinks = () => (
       </Link>
     </li>
     <li className='nav__item'>
-      <Link to='/' className='nav__link'>
+      <Link to='/new-project' className='nav__link'>
         New Project
       </Link>
     </li>
