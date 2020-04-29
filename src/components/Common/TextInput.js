@@ -1,6 +1,13 @@
 import React from 'react';
 
-const TextInput = ({ name, label, value, onChange, error }) => {
+const TextInput = ({
+  name,
+  label,
+  value,
+  placeholder = 'Enter input...',
+  onChange,
+  error,
+}) => {
   return (
     <div className='form__control'>
       <label htmlFor={name} className='form__label'>
@@ -11,7 +18,7 @@ const TextInput = ({ name, label, value, onChange, error }) => {
         type='text'
         value={value}
         name={name}
-        placeholder='Enter text...'
+        placeholder={placeholder}
         onChange={onChange}
       />
       {error && <p className='form__error'>{error}</p>}

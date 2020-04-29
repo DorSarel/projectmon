@@ -11,9 +11,24 @@ const NewProject = () => {
         <TextInput
           name='project_name'
           label='project name'
+          placeholder='project name'
           value=''
           onChange={() => {}}
-          error='error'
+          error=''
+        />
+        <TextInput
+          name='description'
+          label='description'
+          value=''
+          onChange={() => {}}
+          error=''
+        />
+        <TextInput
+          name='stack'
+          label='stack'
+          value=''
+          onChange={() => {}}
+          error=''
         />
         <button className='btn'>Add</button>
       </Form>
