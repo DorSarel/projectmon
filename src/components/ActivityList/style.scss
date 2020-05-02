@@ -31,10 +31,19 @@
   }
 
   &__action {
-    grid-column: col-start 1 / col-end 6;
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
+
+    @media only screen and (min-width: $bp-small) {
+      grid-column: col-start 1 / col-end 6;
+    }
   }
 
   &__date {
-    grid-column: col-start 7 / -1;
+    grid-column: 1 / -1;
+
+    @media only screen and (min-width: $bp-small) {
+      grid-column: col-start 7 / -1;
+    }
   }
 }
