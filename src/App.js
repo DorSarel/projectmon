@@ -7,6 +7,7 @@ import './App.scss';
 import Navbar from './components/Navbar/Navbar';
 import Dashboard from './components/Dashboard/Dashboard';
 import NewProject from './components/Projects/NewProject';
+import Project from './components/Projects/Project';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path='/dashboard' component={Dashboard} />
           <Route path='/new-project' component={NewProject} />
+          <Route path='/projects/:id' component={Project} />
           <Redirect to='/dashboard' />
         </Switch>
       </main>
