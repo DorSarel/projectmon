@@ -1,11 +1,11 @@
 import React from 'react';
-import Project from '../Projects/Project';
+import ProjectCard from '../Projects/ProjectCard';
 
 const RecentProjects = ({ projects }) => {
   return (
     <>
       {projects.map((project) => (
-        <Project
+        <ProjectCard
           key={project.id}
           project={project}
           layoutClass='dashboard__grid-item'

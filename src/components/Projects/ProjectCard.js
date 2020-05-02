@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-const Project = ({ project, layoutClass = '' }) => {
+const ProjectCard = ({ project, layoutClass = '' }) => {
   return (
     <div className={`card project ${layoutClass}`}>
       <h3 className='project__title'>{project.title}</h3>
@@ -12,4 +12,4 @@ const Project = ({ project, layoutClass = '' }) => {
   );
 };
 
-export default Project;
+export default ProjectCard;
